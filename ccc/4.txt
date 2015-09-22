@@ -1,0 +1,5 @@
+def drawTriangle(iter,symbol):
+    maxiter=iter
+    for i in range(1,maxiter+1):
+        print((maxiter-i)*" "+2*i*symbol)
+drawTriangle(8,'#')

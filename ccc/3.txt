@@ -1,0 +1,26 @@
+sel1 = raw_input("첫 번쨰 가위, 바위, 보 가운데 하나를 내세요: ")
+sel2 = raw_input("두 번째 가위, 바위, 보 가운데 하나를 내세요: ")
+
+def compare(u1, u2):
+    if u1 == u2:
+        res="비겼습니다."
+    elif u1 == '가위':
+        if u2 == '바위':
+            res="바위가 이겼습니다."
+        else:
+            res="가위가 이겼습니다."
+    elif u1 == '바위':
+        if u2 == '보':
+            res="보가 이겼습니다."
+        else:
+            res="바위가 이겼습니다."
+    elif u1 == '보':
+        if u2 == '바위':
+            res="보가 이겼습니다."
+        else:
+            res="가위가 이겼습니다."
+    else:
+        res="오류! 가위, 바위, 보 가운데 고르세요!"
+    return res
+
+print(compare(sel1, sel2))

@@ -1,0 +1,7 @@
+def problem_1():
+    sum=0
+    for num in range(0,1000,3):
+        if not (num % 3 and num % 5): sum+=num
+    return sum
+answer=problem_1()
+print "´ä =",answer

@@ -1,0 +1,21 @@
+height=1.74
+weight=69
+def computeBMI(height,weight):
+    bmi = float(weight / height / height)
+    print 'Your BMI is %.2f' % bmi
+    if bmi <= 18.5:
+        res = '저체중'
+    elif bmi >= 18.5 and bmi < 23:
+        res = '정상체중'
+    elif bmi >= 23 and bmi < 25:
+        res = '위험체중'
+    elif bmi >= 25 and bmi < 30:
+        res = "비만 1단계"
+    elif bmi >= 30 and bmi < 40:
+        res = "비만 2단계"
+    elif bmi >= 40:
+        res = "비만 3단계"
+    else:
+        res = "오류"
+    return res
+print computeBMI(height,weight)

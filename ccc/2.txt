@@ -1,0 +1,18 @@
+marksTmp = raw_input('성적을 입력하세요 (0~100):')
+marks = float(marksTmp)
+def computeGrade(marks):
+    if marks>=90 and marks<=100:
+        grade='A'
+    elif marks>=80 and marks<90:
+        grade='B'
+    elif marks>=70 and marks<80:
+        grade='C'
+    elif marks>=60 and marks<70:
+        grade='D'
+    else:
+        grade='F'
+    print "입력한 점수는 {0:.1f} 학점은 {1:2s}".format(marks,grade)
+    return grade
+
+grade=computeGrade(marks)
+print "입력한 점수는 {0:.1f} 학점은 {1:2s}".format(marks,grade)

@@ -1,0 +1,6 @@
+years=[1800,1900,1912,1984,1985,2000,2015,1825,1928,2031,1845,1947,2053,2099]
+for year in years:
+    if (year%4 == 0) and (year%100 !=0 or year%400==0):
+        print '{0}는 윤년입니다.'.format(year)
+    else:
+        print '{0}는 윤년이 아닙니다.'.format(year)

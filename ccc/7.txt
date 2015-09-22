@@ -1,0 +1,15 @@
+def problem_19():
+    D=[31,28,31,
+       30,31,30,
+       31,31,30,
+       31,30,31]
+    d,n=0,0
+    for i in range(0,101):
+        if (not (1900+i)%4 and (1900+i)%100) or not (1900+i)%400: D[1]=29
+        else: D[1]=28
+        for t in D:
+            if not (d-1)%7 and i>=1:
+                n+=1
+            d+=t
+    return n
+problem_19()

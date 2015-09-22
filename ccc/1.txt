@@ -1,0 +1,17 @@
+sel = raw_input('입력하세요 (F 또는 C):')
+temp = raw_input('온도를 입력하세요:')
+temperature = int(temp)
+
+def computeTemperature(sel,temperature):
+    #res=0.0
+    if sel=='F':
+        res=(temperature-32)*5/9.0
+    elif sel=='C':
+        res=temperature*9.0/5.0+32
+    else:
+        print "선택은 F또는 C이어야 합니다."
+    print "{0:d}{1:s}를 변환하면 {2:.2f}입니다".format(temperature,sel,res)
+    return res
+
+result=computeTemperature(sel,temperature)
+print "{0:d}{1:s}를 변환하면 {2:.2f}입니다".format(temperature,sel,result)
