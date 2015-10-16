@@ -1,0 +1,8 @@
+package com.j2.factory.caseExtension;
+
+public class PotatoPizza extends Pizza {
+ public PotatoPizza() {
+ name = "Potato Pizza";
+  
+ }
+}
