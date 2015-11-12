@@ -8,7 +8,7 @@ public class Singleton {
   if (uniqueInstance == null) {
    uniqueInstance = new Singleton();
   }
-               System.out.println("numCalled: "+numCalled++);
+                System.out.println("numCalled: "+numCalled++);
   return uniqueInstance;
  }
 }
