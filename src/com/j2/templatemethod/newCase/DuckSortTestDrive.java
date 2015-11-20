@@ -8,7 +8,7 @@ public class DuckSortTestDrive {
 
 	public static void main(String[] args) {
 		
-		DuckAge[] ducks = { 
+		Duck[] ducks = { 
 						new DuckAge("Daffy", 8,30), 
 			
 						new DuckAge("Dewey", 2,20),
@@ -17,14 +17,14 @@ public class DuckSortTestDrive {
 						new DuckAge("Donald", 10,11), 
 						new DuckAge("Huey", 2,13)
 		 };
-		DuckAge[] ducks1={
-				new DuckAge("Daffy", 8,30), 
+		Duck[] ducks1={
+				new DuckWeight("Daffy", 8,30), 
 				
-				new DuckAge("Dewey", 2,20),
-				new DuckAge("Howard", 7,15),
-				new DuckAge("Louie", 2,8),
-				new DuckAge("Donald", 10,11), 
-				new DuckAge("Huey", 2,13)
+				new DuckWeight("Dewey", 2,20),
+				new DuckWeight("Howard", 7,15),
+				new DuckWeight("Louie", 2,8),
+				new DuckWeight("Donald", 10,11), 
+				new DuckWeight("Huey", 2,13)
 		};
         
 		
@@ -43,7 +43,7 @@ public class DuckSortTestDrive {
 		System.out.println("3.Weight sorting:");
 		System.out.println();
 		Arrays.sort(ducks1);
-        display(ducks);
+        display(ducks1);
         System.out.println();
 	}
 
